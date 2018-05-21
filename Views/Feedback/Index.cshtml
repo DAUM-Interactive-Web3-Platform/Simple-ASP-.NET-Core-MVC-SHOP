@@ -1,0 +1,28 @@
+﻿@model MyShop.Models.Feedback
+<h2>Send us your feedback, comments, and suggestions!</h2>
+
+<form asp-controller="Feedback" asp-action="Index" method="post" role="form">
+    
+
+    <div class="form-group">
+        <label asp-for="Name">Your name</label>
+        <input asp-for="Name" class="form-control" placeholder="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email">Email address</label>
+        <input asp-for="Email" class="form-control" placeholder="Enter email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+        <label asp-for="Message">Place for your feedback</label>
+        <textarea asp-for="Message" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+    <div class="form-check">
+            <input asp-for="ContactMe" type="checkbox" class="form-check-input" />
+            <label asp-for="ContactMe" class="form-check-label">Do you want to contact with us?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

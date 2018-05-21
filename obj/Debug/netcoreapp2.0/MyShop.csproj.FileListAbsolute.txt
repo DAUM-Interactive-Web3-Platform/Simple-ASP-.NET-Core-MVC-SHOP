@@ -1,0 +1,11 @@
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\bin\Debug\netcoreapp2.0\MyShop.deps.json
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\bin\Debug\netcoreapp2.0\MyShop.runtimeconfig.json
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\bin\Debug\netcoreapp2.0\MyShop.runtimeconfig.dev.json
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\bin\Debug\netcoreapp2.0\MyShop.dll
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\bin\Debug\netcoreapp2.0\MyShop.pdb
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\obj\Debug\netcoreapp2.0\MyShop.csprojResolveAssemblyReference.cache
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\obj\Debug\netcoreapp2.0\MyShop.csproj.CoreCompileInputs.cache
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\obj\Debug\netcoreapp2.0\MyShop.AssemblyInfoInputs.cache
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\obj\Debug\netcoreapp2.0\MyShop.AssemblyInfo.cs
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\obj\Debug\netcoreapp2.0\MyShop.dll
+C:\Users\Rafał\Documents\Visual Studio 2017\Projects\MyShop\MyShop\obj\Debug\netcoreapp2.0\MyShop.pdb

@@ -1,0 +1,76 @@
+﻿@model Snowboard
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Model.Brand @Model.Model</h4>
+    <hr />
+    <div class="container">
+        <div>
+            <div class="row">
+                <div class="col">
+                    <img class="leftside" src="@Model.ImageThumbnailUrl" height="600" width="500" />
+                </div>
+                <div class="col">
+                    <dl>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Brand)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Brand)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Model)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Model)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Price)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Length)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Length)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.RidingStyle)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.RidingStyle)
+                        </dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.LongDescription)
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.LongDescription)
+                        </dd>
+
+
+                    </dl>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+   
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-controller="Home" asp-action="Index">Back to List</a>
+    <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+    <div class="button">
+        <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-snowboardId="@Model.Id">
+            Add to cart
+        </a>
+    </div>
+</div>

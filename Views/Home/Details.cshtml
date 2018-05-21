@@ -1,0 +1,25 @@
+﻿@model Snowboard
+
+<div class="container">
+    <div>
+        <div class="row">
+            <div class="col">
+                <img class="leftside" src="@Model.ImageThumbnailUrl" height="600" width="500" />
+            </div>
+            <div class="col">
+                <div>
+                    <h2>@Model.Brand</h2>
+                </div>
+                <div>
+                    <h5>Model: @Model.Model</h5>
+                </div>
+                <div>
+                    <p>Riding style: @Model.RidingStyle</p>
+                </div>
+                <div>
+                   <p>@Model.LongDescription</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

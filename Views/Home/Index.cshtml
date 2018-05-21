@@ -1,0 +1,21 @@
+﻿@model MyShop.ViewModels.HomeViewModel
+
+<h2>@Model.Title</h2>
+
+@foreach (var snowboard in Model.Snowboards)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <a asp-controller="Snowboards" asp-action="Details" asp-route-id="@snowboard.Id">
+                <img src="@snowboard.ImageThumbnailUrl" alt="" height="300" width="200">
+            </a>
+            <div class="caption">
+                <h3 class="pull-right">@snowboard.Price.ToString("c")</h3>
+                <h3>
+                    @snowboard.Brand
+                </h3>
+                <h2>@snowboard.Model</h2>
+            </div>
+        </div>
+    </div>
+}

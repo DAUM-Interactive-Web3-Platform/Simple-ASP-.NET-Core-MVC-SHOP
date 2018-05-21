@@ -1,0 +1,42 @@
+﻿
+@model MyShop.ViewModels.SnowboardsViewModel
+
+
+<h2>@Model.Title</h2>
+<p>
+    <a asp-action="Create" class="btn btn-default">Create New</a>
+</p>
+
+<form  asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            <input type="text" name="id" placeholder="Search for brand">
+            <input type="submit" value="Filter" class="btn btn-dark" />
+            <a asp-action="Index" class="btn btn-default"> Back to full list</a>
+        </p>
+    </div>
+</form>
+
+@foreach (var snowboard in Model.Snowboards)
+{
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <a asp-controller="Snowboards" asp-action="Details" asp-route-id="@snowboard.Id">
+                <img src="@snowboard.ImageThumbnailUrl" alt="" height="300" width="200">
+            </a>
+            <div class="caption">
+                <h3 class="pull-right">@snowboard.Price.ToString("c")</h3>
+                
+                <h3>
+                    @snowboard.Brand
+                </h3>
+                <h3>@snowboard.Model</h3>
+            </div> 
+            <div class="addToCart">
+                      <p>
+                         <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-snowboardId="@snowboard.Id">Add to cart</a>
+                     </p>
+           </div>
+        </div>
+    </div>
+}
