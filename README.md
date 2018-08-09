@@ -1,3 +1,3 @@
 # Simple-ASP-.NET-Core-MVC-SHOP
-My first WebShop with .NET Core
+Simple web shop with .net core and entity framework
 
